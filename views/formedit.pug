@@ -1,0 +1,35 @@
+
+doctype html 
+html 
+    head 
+        
+        title formedit 
+    body
+      
+        table
+            form(action="/formedit", method="post")
+                tr 
+                    th
+                        label(for ="fullname" ) fullname
+                
+                    th
+                         label(for ="phonenumber" ) phonenumber
+                    th
+                         label(for ="email" ) email
+                    th      
+                    
+                         label(for= "password" ) password
+                    th
+                    
+                         label(for ="address") address
+                tr 
+                    td 
+                        #{fullname}
+                    td 
+                        #{phonenumber}
+                    td 
+                        #{email}
+                    td  
+                        #{password}
+                    td  
+                        #{address}
